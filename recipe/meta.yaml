@@ -7,7 +7,7 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP/archive/{{ version }}.tar.gz
-  md5: 87740fc801184e26bd86a48702ea0d48
+  md5: 767e91e8d5b7ebea9119cb5721df5a52
   
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
