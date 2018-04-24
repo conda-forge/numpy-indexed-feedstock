@@ -1,4 +1,4 @@
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: numpy-indexed
@@ -18,7 +18,6 @@ requirements:
     - python
     - setuptools
     - numpy
-    - pyyaml
     - future
   run:
     - python
