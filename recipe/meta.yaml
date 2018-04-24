@@ -1,4 +1,4 @@
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: numpy-indexed
@@ -7,7 +7,7 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP/archive/{{ version }}.tar.gz
-  md5: 767e91e8d5b7ebea9119cb5721df5a52
+  md5: c751ec1455041bef5bcacafe1a702f7c
   
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
