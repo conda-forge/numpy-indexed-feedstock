@@ -16,22 +16,14 @@ build:
 requirements:
   build:
     - python
-    - setuptools
-    - numpy
-    - pyyaml
-    - future
   run:
     - python
     - numpy
     - future
 
 test:
-  commands:
-    - py.test --pyargs numpy_indexed
   imports:
     - numpy_indexed
-  requires:
-    - pytest
   
 about:
   home: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP
