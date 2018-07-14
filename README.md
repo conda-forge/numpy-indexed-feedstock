@@ -14,9 +14,8 @@ Summary: Numpy extensions for set and group_by operations on nd-arrays
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/numpy-indexed-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/numpy-indexed-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/numpy-indexed-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/numpy-indexed-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/numpy-indexed-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/numpy-indexed-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/numpy-indexed-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/numpy-indexed-feedstock)
 
 Current release info
 ====================
