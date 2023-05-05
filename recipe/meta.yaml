@@ -16,11 +16,11 @@ build:
   
 requirements:
   host:
-    - python
+    - python >=2.7
     - setuptools
     - pip
   run:
-    - python
+    - python >=2.7
     - numpy
     - future
 
@@ -30,8 +30,8 @@ test:
   
 about:
   home: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP
-  license: LGPL-3.0
-  license_family: GPL
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: Numpy extensions for set and group_by operations on nd-arrays
 
