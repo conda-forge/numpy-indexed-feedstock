@@ -31,6 +31,8 @@ test:
 about:
   home: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP
   license: LGPL-3.0
+  license_family: GPL
+  license_file: LICENSE
   summary: Numpy extensions for set and group_by operations on nd-arrays
 
 extra:
