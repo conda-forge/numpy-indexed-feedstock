@@ -1,26 +1,26 @@
-{% set version = "0.3.5" %}
+{% set name = "numpy-indexed" %}
+{% set version = "0.3.7" %}
 
 package:
-  name: numpy-indexed
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ version }}.tar.gz
   url: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP/archive/{{ version }}.tar.gz
-  md5: c751ec1455041bef5bcacafe1a702f7c
+  sha256: 10ff97d32d40830be7a7b208bf0d9459395dcb46e0a7ff1a5ee391db2a10a994
   
 build:
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
-  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  number: 0
   
 requirements:
   host:
-    - pip
-    - python
+    - python >=2.7
     - setuptools
+    - pip
   run:
-    - python
+    - python >=2.7
     - numpy
     - future
 
@@ -30,7 +30,9 @@ test:
   
 about:
   home: https://github.com/EelcoHoogendoorn/Numpy_arraysetops_EP
-  license: LGPL-3.0
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
   summary: Numpy extensions for set and group_by operations on nd-arrays
 
 extra:
