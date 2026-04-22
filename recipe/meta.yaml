@@ -12,19 +12,21 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
-  number: 0
+  number: 1
   
 requirements:
   host:
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - numpy
     - future
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - numpy_indexed
   
